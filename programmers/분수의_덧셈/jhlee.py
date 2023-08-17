@@ -14,7 +14,7 @@ def solution_2(numer1, denom1, numer2, denom2):
     numer = numer1 * denom2 + numer2 * denom1
     denom = denom1 * denom2
     gcd = getGcd(denom, numer)
-    return [numer / gsd, denom / gsd]
+    return [numer / gcd, denom / gcd]
 
 def getGcd(a, b):
     return getGcd(b, a % b) if a % b != 0 else b
